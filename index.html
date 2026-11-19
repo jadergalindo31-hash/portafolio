@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jader Galindo | Portafolio</title>
+  <meta name="description" content="Portafolio de Jader Galindo: desarrollo web, diseño de interfaces y proyectos digitales.">
+  <meta name="theme-color" content="#0b0d10">
+  <script>try{var t=localStorage.getItem("tema");if(t){document.documentElement.dataset.tema=t}}catch(e){}</script>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <header class="barra">
+    <a href="#inicio" class="marca">jader<span>_</span></a>
+    <nav id="menu" aria-label="Principal">
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="acciones">
+      <button id="btn-tema" class="icono" type="button" aria-label="Cambiar entre modo oscuro y claro">◐</button>
+      <button id="btn-menu" class="icono burger" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">☰</button>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section id="inicio" class="hero">
+      <div class="hero-texto">
+        <p class="etiqueta">Hola, soy</p>
+        <h1>Jader Galindo</h1>
+        <p class="subtitulo">Construyo proyectos digitales con <em>código, diseño y creatividad</em>.</p>
+        <p class="descripcion">Estoy aprendiendo desarrollo web y mejorando con cada proyecto que publico.</p>
+        <div class="botones">
+          <a class="btn principal" href="#proyectos">Ver proyectos</a>
+          <a class="btn" href="#contacto">Contactarme</a>
+        </div>
+      </div>
+      <div class="codigo" aria-hidden="true">
+        <div class="codigo-barra"><i></i><i></i><i></i><span>jader.js</span></div>
+<pre><b>const</b> jader = {
+  enfoque: <u>"desarrollo web"</u>,
+  aprendiendo: [<u>"JavaScript"</u>, <u>"diseño de interfaces"</u>],
+  herramientas: [<u>"VS Code"</u>, <u>"GitHub"</u>, <u>"IA"</u>],
+  objetivo: <u>"mi primer proyecto real"</u>
+};</pre>
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="seccion reveal">
+      <h2><span>01.</span> Sobre mí</h2>
+      <div class="dos-col">
+        <div>
+          <p>Me enfoco en el desarrollo de proyectos digitales, combinando tecnología, diseño y creatividad. Me interesa la programación y la creación de soluciones funcionales, y busco mejorar mis conocimientos y habilidades a través de cada proyecto.</p>
+          <p>No dependo únicamente de una herramienta de IA: la uso como apoyo mientras aprendo a entender y escribir mi propio código.</p>
+        </div>
+        <ul class="intereses">
+          <li>Programación y desarrollo web</li>
+          <li>Diseño de interfaces y experiencias digitales</li>
+          <li>Inteligencia artificial y herramientas tecnológicas</li>
+          <li>Creación de proyectos digitales</li>
+          <li>Aprendizaje de nuevas habilidades</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="habilidades" class="seccion reveal">
+      <h2><span>02.</span> Habilidades</h2>
+      <div class="grupos">
+        <div>
+          <h3>Lenguajes</h3>
+          <div class="chips"><span>HTML</span><span>CSS</span><span>JavaScript (básico)</span></div>
+        </div>
+        <div>
+          <h3>Herramientas</h3>
+          <div class="chips"><span>VS Code</span><span>Live Server</span><span>Git y GitHub</span><span>Netlify</span><span>Herramientas de IA</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos" class="seccion reveal">
+      <h2><span>03.</span> Proyectos</h2>
+      <div id="lista-proyectos" class="proyectos"></div>
+    </section>
+
+    <section id="contacto" class="seccion reveal">
+      <h2><span>04.</span> Contacto</h2>
+      <div class="dos-col">
+        <div>
+          <p>¿Tienes una idea o un proyecto? Escríbeme y conversamos.</p>
+          <ul class="contactos">
+            <li><a href="mailto:jaderquiroga31@gmail.com">jaderquiroga31@gmail.com</a></li>
+            <li><a href="https://wa.me/573024902764" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+            <li><a href="https://github.com/jadergalindo31-hash" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          </ul>
+        </div>
+        <form id="form" novalidate>
+          <label for="nombre">Nombre</label>
+          <input id="nombre" name="nombre" type="text" maxlength="60" autocomplete="name">
+          <label for="correo">Correo</label>
+          <input id="correo" name="correo" type="email" maxlength="80" autocomplete="email">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" maxlength="800"></textarea>
+          <button class="btn principal" type="submit">Enviar mensaje</button>
+          <p id="estado" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>© <span id="anio"></span> Jader Galindo. Todos los derechos reservados.</p>
+    <nav aria-label="Pie de página">
+      <a href="#inicio">Inicio</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+      <a href="https://github.com/jadergalindo31-hash" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </nav>
+  </footer>
+
+  <button id="btn-subir" class="subir" type="button" aria-label="Volver al inicio">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
